@@ -1,16 +1,14 @@
 import { useState } from "react";
-import { Button, SafeAreaView, StyleSheet, Text, View, Alert, TouchableOpacity } from "react-native";
+import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
 
-import Cat from "./src/Cat";
-
+import Exercise from "./src/Exercise";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar hidden />
       <View style={styles.safeArea}>
-
-        <Cat/>
-
+        <Exercise />
       </View>
     </SafeAreaView>
   );
@@ -24,6 +22,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  }
-
+  },
 });
